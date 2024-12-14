@@ -1,9 +1,6 @@
 Author: Absar Syed
 
-Date: 2024-09-24
-
-This is my site for PC stuff. 
-
+Date: 2024-12-13
 
 <br>
 
