@@ -1,0 +1,840 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>  
+        body {
+            background-color: #F0F7F4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        Handlebars.registerPartial('header');
+        Handlebars.registerPartial('footer');
+    </script>
+
+    <header>
+        
+        <nav class="navbar navbar-expand-lg" style="background-color: #B3BFB8;">
+            <div class="container">
+                <a class="navbar-brand" href="/index">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main class="container my-5">
+        <style>
+    #portfolio-nav{
+        padding-top: 10px;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
+</style>
+
+<h1>Portfolio</h1>
+
+<div class="row p-0 m-0">
+    <div id="portfolio-nav" class="col-4 p-0 m-0">
+        <nav class="h-100 flex-column align-items-stretch pe-4 border-end ">
+            <nav class="nav nav-underline flex-column">
+                <a class="nav-link text-info-emphasis  fs-sm-3" href="#project">Project</a>
+                <a class="nav-link text-info-emphasis  fs-sm-3" href="#labs">Labs</a>
+                <nav class="nav nav-underline flex-column ">
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#lab-1">Lab 1</a>
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#lab-2">Lab 2</a>
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#lab-3">Lab 3</a>
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#lab-4">Lab 4</a>
+                </nav>
+                <a class="nav-link text-info-emphasis  fs-sm-3" href="#classwork">Class Work</a>
+                <nav class="nav nav-underline flex-column">
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#classwork-1">Class Work 1</a>
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#classwork-2">Class Work 2</a>
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#classwork-3">Class Work 3</a>
+                </nav>
+            </nav>
+        </nav>
+    </div>
+
+    <div class="col-8">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+            class="scrollspy-example-2" tabindex="0">
+            <div id="project">
+                <h4>Project</h4>
+                <p>
+                    INFT 3101<br>
+                    Mobile Development<br>
+                    Project<br>
+                    Topic: Flappy Bird Clone
+                </p>
+                <br>
+                <p>
+                    Group Members: <br>
+                    Takirul Islam<br>
+                    Ali Mujtaba - 100792180<br>
+                    Absar Syed<br>
+                    Group Number: 2<br>
+                    Faculty of Science, Engineering, and Information Technology (SEIT), Durham College<br>
+                    INFT-3101-03: Mobile Development
+                </p>
+                <br>
+                <p>
+                    <b>App Description</b><br>
+                    This project is a clone of the popular Flappy Bird game. The app offers a fun and engaging experience where players navigate a bird through pipes while trying to avoid obstacles. It includes five distinct screens: a start screen where players input their name and have the option to customize or adjust settings, a settings screen to control volume and other game preferences, a customization screen where users can change the bird's color using in-game points, a game screen where the action takes place, and a leaderboard that connects to a database to track high scores.
+                </p>
+                <br>
+                <p>
+                    <b>App Deliverables</b><br>
+                    The deliverables for this project include the complete set of app features, each accompanied by detailed descriptions and corresponding visual elements such as wireframes or screenshots. The app's first screen, where users can enter their name and choose between starting the game, accessing settings, or customizing the bird, will feature a simple and intuitive design. The settings screen will allow users to control in-game audio levels and, potentially, other preferences to personalize the gameplay experience. The customization screen will showcase a variety of bird colors, which can be unlocked or purchased using points earned during gameplay. This system will give players a sense of progression as they advance through the game. The game screen itself will be highly interactive, focusing on smooth, fluid gameplay mechanics where players control the bird by tapping the screen to navigate through obstacles. The final screen will present a leaderboard, connected to a database, where users can see their rank and compare scores with friends and other players globally. All screens will be designed with user experience in mind, ensuring that the app is easy to navigate, visually appealing, and offers smooth transitions between different features. Visuals will be provided through wireframes or mockups that illustrate how the app will look and function in real-time.
+                </p>
+                <br>
+                <img src="/assets/Picture1.png" alt="mockup1" class="img-fluid">
+                <img src="/assets/Picture2.png" alt="mockup2" class="img-fluid">
+                <p>Mockups of the app from our planning and design stage, all made on Figma.com.</p>
+                <br><br>
+                <p>
+                    <b>App Drawbacks</b><br>
+                    Despite its simple and engaging gameplay, the Flappy Bird clone app does have a few notable limitations. One issue is the lack of complexity in the game’s mechanics. The game essentially requires the player to tap the screen to keep the bird in the air, which can quickly become repetitive and boring. Adding more dynamic elements, such as changing speeds or varying obstacles, could improve the player experience by offering more challenge. Another drawback is the limited customization available to the player. Currently, the only customization is the ability to change the bird’s color, which doesn’t offer much variety or personal expression. Expanding customization options to include different bird designs, accessories, or even gameplay styles could make the app more appealing. Additionally, the game relies on an internet connection for displaying the leaderboard, which may not always be ideal for players in low-connectivity areas. A local leaderboard would be a great fallback option for players who prefer to play offline. Lastly, the game’s static background might not be engaging enough for players in the long run. It could be more visually stimulating if the background included moving clouds or varying weather conditions, offering a more immersive experience.
+                </p>
+                <br>
+                <p> 
+                    <b>Screenshots & Testing</b><br>
+                    <b>Sign-in</b><br>
+                </p>
+                <img src="/assets/Picture3.png" alt="signin screen" class="img-fluid">
+                <p>
+                    This is the initial sign-in page on the first start of the app. Using Firebase Anonymous Authentication, the user inputs a Username and is logged in once and forever, or until they clear their app storage. Currently, there is no way to sign back in once data is cleared.
+                </p>
+                <br>
+                <p>
+                    <b>Homepage</b><br>
+                </p>
+                <img src="/assets/Picture4.png" alt="home screen" class="img-fluid">
+                <p>  
+                    You are then met with the Homepage where you can see 2 buttons, one for the settings page and the other for the leaderboard. The background is a png that infinitely moves to the left giving a flying look. The bird is animated with a simple 2-frame animation from a spritesheet to appear as though it is flapping its wings. To initiate gameplay simply tap on the screen to start and you are off.
+                </p>
+                <br>
+                <p>
+                    <b>Settings</b><br>
+                </p>
+                <img src="/assets/Picture5.png" alt="settings screen" class="img-fluid">
+                <p>
+                    After tapping on the settings button, the settings screen opens, and the player is met with their username which is fetched from Firebase, a toggle switch for the background music, and a button to go back to the homepage.
+                </p>
+                <br>
+                <p>
+                    <b>Leaderboard</b><br>
+                </p>
+                <img src="/assets/Picture6.png" alt="leaderboard screen" class="img-fluid">
+                <p>
+                    From the homepage, after tapping on the leaderboard, the player is met with the leaderboard screen showing the top five players with the highest score. This page fetches its data from the Firebase Cloud Firestore Database. The data is updated every time you click on this page. After the table, you can see we display the player’s name, highest score, total coins they have accumulated, and another button to direct the player back to the homepage.
+                </p>
+                <br>
+                <p>
+                    <b>Gameplay</b><br>
+                </p>
+                <img src="/assets/Picture7.png" alt="gameplay screen" class="img-fluid">
+                <p>
+                    From the homepage, once the player taps on the screen, the app title and buttons disappear, and the pipes begin to move in from the right, giving a seamless transition from the homepage to gameplay. The pipes will randomly generate infinitely, and only 5 pipes are kept in the game at a time to avoid creating a memory leak. A gold coin remains in between each pipe pair which will serve as the points system with the counter being displayed at the top of the screen.
+                </p>
+                <br>
+                <p>
+                    <b>Game Over</b><br>
+                </p>
+                <img src="/assets/Picture8.png" alt="gameover screen" class="img-fluid">
+                <p>
+                    Our final screen of the app is the game over screen. It displays once the player makes contact with the pipes. It displays the score as “Coins earned:” and has a button that returns the player back to the homepage.
+                </p>
+                <br>
+                <p>
+                    <b>Firebase Authentication</b><br>
+                </p>
+                <img src="/assets/Picture9.png" alt="anon auth" class="img-fluid">
+                <p>
+                    This is the service used in order to anonymously authenticate a user to sign in to the game.
+                </p>
+                <br>
+                <p>
+                    <b>Firebase Cloud Firestore Database</b><br>
+                </p>
+                <img src="/assets/Picture10.png" alt="players table" class="img-fluid">
+                <p>
+                    This is the schema for the players table.
+                </p>
+                <br>
+                <img src="/assets/Picture11.png" alt="scores table" class="img-fluid">
+                <p>
+                    This is the schema for the scores table.
+                </p>
+                <br>
+                <img src="/assets/Picture12.png" alt="skins table" class="img-fluid">
+                <p>
+                    This is the schema for the skins table, which was unfortunately not utilized as skins and customizations were not able to be implemented due to time constraints.
+                </p>
+                <br>
+                <p>
+                    <b>Reflections</b><br>
+                    <b>Absar - Functionality Developer</b><br>
+                    Reflecting on this project, I can look back on this and say I have learned a lot and have enjoyed it thoroughly. I put together the frontend, game logic, all screens, and functionalities, aside from backend services. This learning to make a game was a lot of fun and something I have been wanting to do for a while. Even though I faced a lot of challenges, I had fun solving them. The biggest challenge by far was just having to learn everything. As Flutter was new to me, I was essentially going off nothing, consuming a lot of time with reading documentation and watching hours-long tutorials on 2x speed. I eventually found Flame, a 2D game engine for Flutter, which gave me more direction in building, but yet another thing to learn. It does not help how Dart structures its builds with continuous nesting of components. Eventually, you must encapsulate parts of a build into its own class for readability. To reiterate, the biggest challenge was how time-consuming learning Flutter and Flame was, nevertheless I enjoyed every bit of it.
+                </p>
+                <br>
+                <p>
+                    <b>Ali - Backend Developer</b><br>
+                    Developing this app was both a challenging and deeply rewarding experience. From conceptualizing the app to implementing its core features, the journey was filled with learning opportunities and moments of creativity. Conceptualizing the gameplay and outlining the app's structure came naturally, as the game's logic and features felt intuitive to design. However, bringing these ideas to life required a steep learning curve. Integrating Firebase was my first experience working with a cloud-based backend, and learning its concepts—from authentication to Firestore configuration—was both daunting and fascinating. Setting up the database to store player scores, purchased skins, and in-game points required me to learn Firebase's structure and best practices. Like the frontend, I faced numerous hurdles when trying to make everything work seamlessly. Initially, I found Firebase's documentation overwhelming and difficult to navigate. Tasks like configuring authentication, setting up real-time updates for the leaderboard, and managing data security were frustrating at times, as I was essentially starting from scratch. However, as I experimented and explored, I began to see how powerful Firebase could be. With every small breakthrough—whether it was successfully saving data to Firestore or implementing user-specific configurations—I felt a sense of accomplishment that made the effort worthwhile. This project not only deepened my understanding of mobile app development but also introduced me to the intricacies of working with backend services. It strengthened my problem-solving skills and taught me to be resourceful when navigating complex frameworks and third-party tools. Overall, I’m proud of what I’ve accomplished and excited to apply these skills to future projects.
+                </p>
+                <br>
+                <p>
+                    <b>Takirul - UX/UI Designer</b><br>
+                    As the UI/UX designer for our Flappy Bird game, my involvement was minimal, and the design ended up being a bit of a mess. From the very start, I didn’t understand the requirements well, and I assumed that creating a simple, minimal interface would be enough. I didn’t consider the app’s core functionality or its user experience thoroughly enough. I quickly sketched a basic wireframe without much thought or effort, and even though it was approved by the team, the mockups didn’t represent the feel of the game at all. The colors I chose were too bright, and I didn’t consider how they might affect gameplay. For instance, the background color clashed with the bird and obstacles, making it hard to distinguish the key elements of the game. The buttons were poorly placed, and the layout didn’t offer any clarity or intuitive navigation. Instead of focusing on making the user interface smooth and engaging, I just threw together a simple menu and game screen, hoping it would work without further refinement. I didn’t take time to plan out the flow of the game, and because of this, the game felt disjointed. The text on the screens was hard to read, and the icons were too small, which made it difficult for players to understand how to navigate the app. I didn’t do much testing or seek feedback from the team until the app was nearly finished, which meant I had no opportunity to make meaningful changes. When it came to the design of the interactive elements, I didn’t take advantage of animations or subtle transitions to enhance the user experience. The bird flapping, for example, didn’t look fluid, and the game didn’t have any sound effects or animations to make it feel immersive. I could have added a visual cue for the score or made the game controls more accessible, but I didn’t focus on those elements. The settings page was also a missed opportunity for user interaction—what could have been a space to allow players to adjust difficulty or sound settings turned out to be a bare-bones page with little functionality.
+                </p>
+            </div>
+            <div id="labs">
+                <h4>Labs</h4>
+                <p>This is a collection of all my labs that are completed individually, enjoy!</p>
+            </div>
+            <div id="lab-1">
+                <h5>Lab 1</h5>
+                <p><strong>Absar Syed</strong><br>
+                    <strong>Student ID:</strong> 100706764<br>
+                    <strong>Course:</strong> INFT 3101
+                </p>
+                
+                <hr>
+                
+                <h2>The Mobile Revolution: Mobile Banking</h2>
+                <p>Mobile banking has without a doubt changed the landscape of the financial sector for the better. With the inclusion
+                    of the smartphone and the ever-present societal expectation of everyone always having a device on them, it came with
+                    a new way of banking and a cashless economy. Some things that mobile banking has done to improve the financial
+                    sector are financial inclusion, cost reductions, and enhanced customer experiences. It is important to consider that
+                    it does not come without its own set of challenges, such as the security challenge. Nevertheless, the good far
+                    outweigh the bad and mobile banking has without a doubt changed the landscape of the financial sector for the
+                    better.</p>
+                
+                <p><strong>Financial inclusion</strong> is a term that people may not have heard of but are living it daily. Through
+                    mobile banking, the ability to access financial services has greatly and dramatically increased. With many people
+                    across the globe living in developing countries where the infrastructure is not as strong, the opportunity to bank
+                    off your device has become a godsend. People in rural areas where the nearest physical branch location is too far
+                    away benefit greatly from this.</p>
+                
+                <p><strong>Cost reductions</strong> due to mobile banking are massive. Automation of routine processes has reduced the
+                    need for physical branches and staffing, leading to cost reduction. With the move to an online system, banks have a
+                    lesser need to print money. Another cost reduction, with the bonus of becoming more environmentally friendly, has
+                    been achieved.</p>
+                
+                <p>One way enhanced user experience is shown is with the new standard of accessibility. 24/7 banking services are
+                    available to you on your device. Services like managing your accounts, checking your balance, making payments,
+                    transferring funds between accounts, and so on are always at the customer’s fingertips.</p>
+                
+                <p>It is always important to note that challenges come with everything. In this case, the challenge of
+                    <strong>security</strong> is always present. Your money should always be secure, but there are people who do intend
+                    to steal. These can happen through socially engineered attacks such as phishing or with a weak authentication method
+                    such as a single password. The good news is that with some education and multi-factor authentication, these are
+                    easily avoidable.</p>
+                
+                <p>Mobile banking showcases its implication to the financial sector in ways such as bringing about a greater level of
+                    inclusion, increasing savings, and enhancing the customers’ experience. Not without its challenge of security, that
+                    can be easily quelled with education and proper authentication methods in place. Mobile banking has without a doubt
+                    changed the landscape of the financial sector for the better.</p>
+                
+                <h3>Clash of Titans:</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Specification</th>
+                            <th>Samsung Galaxy 23 FE</th>
+                            <th>Apple iPhone 14 Plus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Picture</td>
+                            <td><img src="/assets/Picture13.png" alt="23 fe" class="img-fluid"></td>
+                            <td><img src="/assets/Picture14.png" alt="14 plus" class="img-fluid"></td>
+                        </tr>
+                        <tr>
+                            <td>Display</td>
+                            <td>120 Hz, HDR10+, 1450 nits</td>
+                            <td>60Hz, HDR10, 1200 nits</td>
+                        </tr>
+                        <tr>
+                            <td>RAM</td>
+                            <td>8 GB</td>
+                            <td>6 GB</td>
+                        </tr>
+                        <tr>
+                            <td>CPU</td>
+                            <td>Qualcomm SM8450 Snapdragon 8 Gen 1 - 8 cores</td>
+                            <td>Apple A15 Bionic</td>
+                        </tr>
+                        <tr>
+                            <td>Camera</td>
+                            <td>8k@24fps videos</td>
+                            <td>4k@60fps videos</td>
+                        </tr>
+                        <tr>
+                            <td>Battery</td>
+                            <td>Li-Ion 4500 mAh</td>
+                            <td>Li-Ion 4323 mAh</td>
+                        </tr>
+                        <tr>
+                            <td>Price on Amazon</td>
+                            <td>$592.99</td>
+                            <td>$723.60</td>
+                        </tr>
+                        <tr>
+                            <td>Benchmarks</td>
+                            <td>AnTuTu: 940921, GFXBench: 79fps</td>
+                            <td>AnTuTu: 797976, GFXBench: 60fps</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Specifications retrieved from: <a href="https://www.gsmarena.com/compare.php3?idPhone1=12520&idPhone2=11862">Compare Samsung Galaxy S23 FE vs. Apple iPhone 14 Plus - GSMArena.com</a> </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>The Samsung Galaxy S23 FE is the phone I own, and the Apple iPhone 14 Plus is my wife’s phone. I am an android fan at
+                    heart and an Apple hater to the core. We have this discussion all the time about which is better. I always say
+                    android and she will always say Apple. I have laid out this chart detailing just a few out of the many
+                    specifications where Samsung trumps over Apple. The winner is and always will be android and Samsung.</p>
+                
+                <h3>The Ultimate Service Provider Showdown:</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Service Provider</th>
+                            <th>Virgin</th>
+                            <th>Fido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Plan</td>
+                            <td>LOY+ BYOP UNLTD 60GB 5G</td>
+                            <td>BYOP 60GB</td>
+                        </tr>
+                        <tr>
+                            <td>Calls</td>
+                            <td>Unlimited anytime minutes, Canada wide calling, Standard long-distance rates</td>
+                            <td>Unlimited minutes, Canada wide calling, Standard long distance rates</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>60GB @ 5g speeds (up to 250 mbps)</td>
+                            <td>60GB</td>
+                        </tr>
+                        <tr>
+                            <td>Messaging</td>
+                            <td>Unlimited incoming texts, Unlimited picture and video messaging, CAN-US International text</td>
+                            <td>Unlimited texts</td>
+                        </tr>
+                        <tr>
+                            <td>Call Features</td>
+                            <td>Call display, Voicemail 3, Call waiting, 3 way calling</td>
+                            <td>Voicemail 3</td>
+                        </tr>
+                        <tr>
+                            <td>Fees</td>
+                            <td>$44.99/month + tax</td>
+                            <td>$54.00/month + tax</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>The Virgin plan is my own personal plan, and the Fido is the equivalent I could find on their website. It’s important
+                    to note that this is my LOY+ plan, meaning I gained access to this plan by staying with Virgin for 2+ years. They
+                    are practically the same service but there are some crucial differences. Bell has some of the best infrastructure
+                    and fastest networks today, and Virgin can access their network as the child company. Looking at the consensus from
+                    user reviews, Virgin takes the cake with their quality of service. And on top of that, the Virgin plan is more
+                    affordable. Total monthly payments are $50.85 a month for Virgin, and for Fido, it’s $61.02 per month, giving a
+                    difference of $10.17. Virgin easily takes the win here with essentially the same features but with better service
+                    and pricing.</p>
+                
+                <hr>
+                
+                <h4>References</h4>
+                <ul>
+                    <li><a
+                            href="https://www.backbase.com/blog/perspectives/how-banks-can-achieve-cost-savings-in-digital-transformation-while-creating-a-better-customer-experience">Backbase.
+                            (n.d.). How banks can achieve cost savings while creating a better customer experience</a></li>
+                    <li><a href="https://www.rtinsights.com/how-mobile-banking-apps-enhance-the-user-experience/">Butler, C. (2022,
+                            August 8). How mobile banking apps enhance the user experience. RTInsights.</a></li>
+                    <li><a href="https://doi.org/10.1007/s40847-024-00376-y">Khobragade, A., et al. (2024). Mobile banking adoption for
+                            Financial Inclusion: Insights from rural west Bengal. Journal of Social and Economic Development.</a></li>
+                    <li><a href="https://doi.org/10.1596/1813-9450-5664">Klein, M., & Mayer, C. (2011). Mobile Banking and Financial
+                            Inclusion: The regulatory lessons.</a></li>
+                </ul>            </div>
+            <div id="lab-2">
+                <h5>Lab 2</h5>
+                <p>Absar Syed<br>INFT 3101<br>2024-09-26</p>
+                
+                
+                <h3>XML Screenshots</h3>
+                <img src="/assets/Picture15.png" alt="xml1" class="img-fluid">
+                <img src="/assets/Picture16.png" alt="xml2" class="img-fluid">
+                <img src="/assets/Picture17.png" alt="xml3" class="img-fluid">
+                
+                <h3>DTD Code</h3>
+                <pre style="white-space: pre-wrap; font-size: 0.6rem;">
+                &lt;!ELEMENT Events (OrgName, OrgLogo, Website?, Socials*, Event+)&gt;
+                &lt;!ELEMENT OrgName (#PCDATA)&gt;
+                &lt;!ELEMENT OrgLogo (#PCDATA)&gt;
+                &lt;!ATTLIST OrgLogo type CDATA #FIXED "image" format (jpg|jpeg|png) #REQUIRED&gt;
+                &lt;!ELEMENT Website (#PCDATA)&gt;
+                &lt;!ELEMENT Socials (#PCDATA)&gt;
+                
+                &lt;!ELEMENT Event (EventName, Date, Host, Participants+, Resources, Feedback*, Finances)&gt; 
+                &lt;!ATTLIST Event eventID CDATA #REQUIRED&gt;
+                &lt;!ELEMENT EventName (#PCDATA)&gt;
+                &lt;!ELEMENT Date EMPTY&gt;
+                &lt;!ATTLIST Date start CDATA #REQUIRED end CDATA #REQUIRED&gt;
+                
+                &lt;!ELEMENT Host (HostName, HostContact)&gt;
+                &lt;!ATTLIST Host hostID CDATA #REQUIRED&gt;
+                &lt;!ELEMENT HostName EMPTY&gt;
+                &lt;!ATTLIST HostName first CDATA #REQUIRED last CDATA #REQUIRED&gt;
+                &lt;!ELEMENT HostContact EMPTY&gt;
+                &lt;!ATTLIST HostContact phone CDATA #REQUIRED email CDATA #REQUIRED&gt;
+                
+                &lt;!ELEMENT Participants (ParticipantName, Role, ParticipantContact)&gt;    
+                &lt;!ELEMENT ParticipantName EMPTY&gt;
+                &lt;!ATTLIST ParticipantName first CDATA #REQUIRED last CDATA #REQUIRED&gt;
+                &lt;!ELEMENT Role (#PCDATA)&gt;
+                &lt;!ELEMENT ParticipantContact EMPTY&gt;
+                &lt;!ATTLIST ParticipantContact phone CDATA #REQUIRED email CDATA #REQUIRED&gt;
+                
+                &lt;!ELEMENT Resources (Venue, Equipment+, Catering*)&gt;
+                &lt;!ELEMENT Venue EMPTY&gt;
+                &lt;!ATTLIST Venue location CDATA #REQUIRED capacity CDATA #REQUIRED&gt;
+                &lt;!ELEMENT Equipment (#PCDATA)&gt;
+                &lt;!ELEMENT Catering (#PCDATA)&gt;
+                &lt;!ATTLIST Catering details CDATA #REQUIRED&gt;
+                
+                &lt;!ELEMENT Feedback (Comment)&gt;
+                &lt;!ATTLIST Feedback feedbackID CDATA #REQUIRED&gt;
+                &lt;!ELEMENT Comment (#PCDATA)&gt;
+                
+                &lt;!ELEMENT Finances (Budget, Revenue)&gt;
+                &lt;!ELEMENT Budget (#PCDATA)&gt;
+                &lt;!ELEMENT Revenue (#PCDATA)&gt;
+                    </pre>
+                
+                <h3>XML Validation</h3>
+                <img src="/assets/Picture18.png" alt="xml-validate-1" class="img-fluid">
+                <img src="/assets/Picture19.png" alt="xml-validate-2" class="img-fluid">
+                
+                <h3>XML Tree Diagram</h3>
+                <img src="/assets/Picture20.png" alt="xml-tree" class="img-fluid">
+                
+                <h3>References</h3>
+                <ul>
+                    <li><a href="https://www.w3schools.com/xml/">XML Tutorial - w3schools.com</a></li>
+                    <li><a href="https://www.xmlvalidation.com/">Validate XML files - xmlvalidation.com</a></li>
+                </ul>            </div>
+            <div id="lab-3">
+                <h5>Lab 3</h5>
+                <p><strong>Absar Syed</strong></p>
+                <p><strong>INFT 3101</strong></p>
+                <p><strong>Date:</strong> 2024-10-04</p>
+                
+                <h3 id="app-code">App Code</h3>
+                
+                <h4 id="welcome-activity">WelcomeActivity.java:</h4>
+                <pre>
+                package com.example.tempconverter;
+                
+                import android.content.Intent;
+                import android.os.Bundle;
+                import android.view.View;
+                import android.widget.Button;
+                
+                import androidx.activity.EdgeToEdge;
+                import androidx.appcompat.app.AppCompatActivity;
+                import androidx.core.graphics.Insets;
+                import androidx.core.view.ViewCompat;
+                import androidx.core.view.WindowInsetsCompat;
+                
+                public class WelcomeActivity extends AppCompatActivity {
+                
+                    @Override
+                    protected void onCreate(Bundle savedInstanceState) {
+                        super.onCreate(savedInstanceState);
+                        EdgeToEdge.enable(this);
+                        setContentView(R.layout.activity_welcome);
+                        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+                            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+                            return insets;
+                        });
+                
+                        Button startBtn = findViewById(R.id.startBtn);
+                        startBtn.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+                                startActivity(intent);
+                            }
+                        });
+                    }
+                }
+                        </pre>
+                
+                <h4 id="main-activity">MainActivity.java:</h4>
+                <pre>
+                package com.example.tempconverter;
+                
+                import android.os.Bundle;
+                
+                import androidx.activity.EdgeToEdge;
+                import androidx.appcompat.app.AppCompatActivity;
+                import androidx.core.graphics.Insets;
+                import androidx.core.view.ViewCompat;
+                import androidx.core.view.WindowInsetsCompat;
+                
+                public class MainActivity extends AppCompatActivity {
+                
+                    @Override
+                    protected void onCreate(Bundle savedInstanceState) {
+                        super.onCreate(savedInstanceState);
+                        EdgeToEdge.enable(this);
+                        setContentView(R.layout.activity_main);
+                        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+                            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+                            return insets;
+                        });
+                    }
+                }
+                        </pre>
+                
+                <h3 id="screenshots">Screenshots</h3>
+                <img src="/assets/Picture21.png" class="img-fluid" alt="screenshot1">
+                <img src="/assets/Picture22.png" class="img-fluid" alt="screenshot2"> 
+                
+                <h3 id="reflection">Reflection:</h3>
+                <p>
+                    I enjoyed this lab but unfortunately was unable to complete it. I had a plan to make a temperature converter app,
+                    where it converts a number between Fahrenheit, Celsius, or Kelvin. A challenge I faced during this lab was getting
+                    the emulators to work correctly. I had issues with getting them to run or open in Android Studio. I assumed it was
+                    due
+                    to my underperforming laptop, so I switched to my desktop workstation and it began to work again. I’ve found
+                    Bluestacks
+                    to be more reliable than the emulator found in Android Studio, as it works on my laptop as well.
+                </p>            </div>
+            <div id="lab-4">
+                <h5>Lab 4</h5>
+                <p><strong>Absar Syed</strong></p>
+                <p><strong>INFT 3101</strong></p>
+                <p><strong>Date:</strong> 2024-11-01</p>
+                
+                <h2>Topic Overview: Generics</h2>
+                
+                <h3>Definition</h3>
+                <p>
+                    Generics in Dart and in general is a type-safe way to write flexible, reusable code that can work with different
+                    data types.
+                    In other words, generics are not specific to any particular data type. With generics, you can define classes,
+                    methods,
+                    and functions without a strictly defined data type but instead can pass in any data type using type parameters.
+                    These type parameters, which look like <code>&lt;T&gt;</code>, are used as placeholders for when a data type is
+                    passed through.
+                </p>
+                
+                <h3>How & Why</h3>
+                <p>
+                    Generics are used for clean, type-safe, reusable code. There are cases in which the exact same class, method or
+                    function
+                    are recreated because it requires a different data type. With generics, you do not need to duplicate your code
+                    for different
+                    data types but can simply write one class, method or function and have different data types be passed through
+                    it, while still
+                    maintaining type safety.
+                </p>
+                
+                <h3>Comparisons</h3>
+                <p>
+                    One comparison with similar or related programming concepts in Dart to generics would be dynamic typing. Dynamic
+                    typing is when
+                    you declare the data type of a variable as ‘dynamic’ allowing it to change types at runtime. You can also use
+                    type inference by
+                    declaring <code>var</code> and it will default to a dynamic data type. Dynamic typing has flexibility with its
+                    code with no runtime
+                    errors just like generics but lacks type safety.
+                </p>
+                
+                <h3>Advantages & Limitations</h3>
+                <p>
+                    Some advantages of generics in Dart are that it is type-safe, promotes code reusability, and can improve
+                    performance. When using
+                    generics, it ensures that you catch type-related errors at compile time instead of runtime, reducing the chance
+                    of bugs.
+                    Generics promote reusability by working with any data type, making them flexible as well. They improve
+                    performance by eliminating
+                    the need for type checks at runtime.
+                </p>
+                <p>
+                    Some limitations of generics in Dart include the complexity of the code and some constraints during runtime.
+                    Generics can make
+                    your code more complex and difficult to read, especially for those who are not familiar with the concept. Dart’s
+                    runtime type
+                    checking does not always work well with generics due to Dart’s type erasure.
+                </p>
+                
+                <h3>Example Implementation</h3>
+                
+                <h4>Example 1</h4>
+                <p><strong>Code & Output</strong></p>
+                <img src="/assets/Picture23.png" alt="code output" class="img-fluid">
+                
+                <h4>Issues or Considerations</h4>
+                <p>
+                    I didn’t have much issue with generating this example. I had thoroughly researched the concept and felt I had a
+                    strong
+                    understanding of what generics are. I did however find it difficult to come up with an idea to implement the
+                    concept.
+                    I looked towards YouTube for inspiration and saw what others have made. I found a few videos explaining and
+                    demoing generics
+                    in a simple way. In their examples, it was common for them to use different data type arrays, which sparked my
+                    own idea for
+                    implementation. I am pleased with this example as I have implemented a new concept that I have learned in a
+                    straightforward manner.
+                </p>
+                
+                <h4>Example 2</h4>
+                <p><strong>Code & Output</strong></p>
+                <img src="/assets/Picture24.png" alt="code output 2" class="img-fluid">
+                <img src="/assets/Picture25.png" alt="code output 3" class="img-fluid">
+                
+                
+                <h4>Issues or Considerations</h4>
+                <p>
+                    This example showcases how generics are used when only numeric data types are needed for arithmetic and how we
+                    can use
+                    generics to constrain certain data types. It might sound counterintuitive because generics are supposed to allow
+                    for the
+                    pass-through of all data types. In the case of needing all numeric data types for a math operation, this can be
+                    used as
+                    a possible solution. With this approach, you do not have to explicitly state <code>int</code> and
+                    <code>double</code> and can
+                    reduce the amount of code. I also showcase the same concept being done with the <code>String</code> data type
+                    for only accepting
+                    alphabet characters. I personally do not see the value in this implementation, as Dart considers
+                    <code>char</code> as a
+                    <code>String</code> as well. So, <code>&lt;T extends String&gt;</code> is not different from
+                    <code>&lt;String&gt;</code>
+                    therefore, it becomes unnecessary.
+                </p>
+                
+                <h3>Real-World Scenario</h3>
+                <p>
+                    A real-world scenario that implements generics with Flutter in mind would be generic widgets. Since widgets are
+                    the building
+                    block of mobile app development, it can become repetitive to have to build so many widgets. With generic
+                    widgets, you can
+                    increase code reusability, reduce code duplication all while being type-safe and flexible.
+                </p>
+                <p>
+                    Imagine a fitness tracking app that aims to have a dashboard that displays multiple different metrics of your
+                    activities.
+                    Using generic widgets, you can create a widget that displays any metric of any data type. This allows for a more
+                    uniform
+                    look that shows consistency in design, which can enhance the user’s experience. Also, the code reusability
+                    allows for reduced
+                    code duplication and increases maintainability as any changes to the widget are done in one place.
+                </p>
+                
+                <h3>References</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=aNTDJ9bnRU4&t=18s">Bro Code. (2021, July 3). C# generics ⁉️.
+                            YouTube.</a></li>
+                    <li><a href="https://www.darttutorial.org/dart-tutorial/dart-generics/">Dart generics. Dart Tutorial. (2022,
+                            June 11)</a></li>
+                    <li><a href="https://dart.dev/language/type-system">The Dart Type System. Dart. (2024, February 21)</a></li>
+                    <li><a href="https://dart.dev/language/generics">Generics. Dart. (n.d.)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=8MywaeBqFmI">NetNinja. (2024, January 19). Dart Crash Course #10 -
+                            Generics. YouTube.</a></li>
+                </ul>            </div>
+            <div id="classwork">
+                <h4>Class Work</h4>
+                <p>This is a collection of all my class works that are completed individually, enjoy!</p>
+            </div>
+            <div id="classwork-1">
+                <h5>Class Work 1</h5>
+                <p><strong>Absar Syed</strong></p>
+                <p><strong>INFT 3101</strong></p>
+                <p><strong>Date:</strong> 2024-09-27</p>
+                
+                <h2>App Code</h2>
+                
+                <img src="/assets/Picture26.png" alt="app code 1" class="img-fluid">
+                <img src="/assets/Picture27.png" alt="app code 2" class="img-fluid">
+                <img src="/assets/Picture28.png" alt="app code 3" class="img-fluid">
+                <img src="/assets/Picture29.png" alt="app code 4" class="img-fluid">
+                
+                <h2>Emulation</h2>
+                <h3>Internal</h3>
+                
+                <img src="/assets/Picture30.png" alt="internal 1" class="img-fluid">
+                <img src="/assets/Picture31.png" alt="internal 2" class="img-fluid">
+                
+                <h3>External</h3>
+                
+                <img src="/assets/Picture32.png" alt="external 1" class="img-fluid">
+                <img src="/assets/Picture33.png" alt="external 2" class="img-fluid">
+                
+                <h2>Reflection</h2>
+                <p>
+                    This was my first time developing a mobile app and I’ve been very excited to start. This felt daunting at first, but
+                    the more
+                    I played around with it, the more comfortable I began to feel. I enjoyed using the Android Studio IDE. I already
+                    favour JetBrains
+                    IDEs like IntelliJ, and this is built off it so I felt right at home with the software. The biggest challenge was
+                    getting my external
+                    Android emulator, BlueStack 5, working as I wished. I was researching how I could make it so that Android Studio
+                    would automatically
+                    connect to it with Android Debugging Bridge (adb), but I could not get it to work. I ended up using the way that was
+                    taught in class
+                    by simply installing the apk onto the emulator. Another challenge was when I was laying out my textviews and ran my
+                    app internally,
+                    it would all render at (0,0). I had not put constraints on any of my elements. I compare this to my experience with
+                    C# and Visual Studio
+                    where you can drag and drop elements with no issues. I assumed it would be the same case with Android Studio. I
+                    found this to be a fun
+                    and exciting exercise and am looking forward to learning and creating more.
+                </p>            </div>
+            <div id="classwork-2">
+                <h5>Class Work 2</h5>
+                <p><strong>Absar Syed</strong></p>
+                <p><strong>INFT 3101</strong></p>
+                <p><strong>Date:</strong> 2024-10-11</p>
+                
+                <h2>App Code</h2>
+                <h3>Screen 1</h3>
+                
+                <img src="/assets/Picture34.png" alt="screen1" class="img-fluid"> 
+                
+                <h3>Screen 2</h3>
+                
+                <img src="/assets/Picture35.png" alt="screen2" class="img-fluid">
+                <img src="/assets/Picture36.png" alt="screen2" class="img-fluid">
+                <img src="/assets/Picture37.png" alt="screen2" class="img-fluid">
+                <img src="/assets/Picture38.png" alt="screen2" class="img-fluid">
+                
+                <h2>App Test</h2>
+                
+                <img src="/assets/Picture39.png" alt="app-test1" class="img-fluid">
+                <img src="/assets/Picture40.png" alt="app-test2" class="img-fluid">
+                
+                <h2>Reflection</h2>
+                <p>
+                    Class work 2 was a lot of fun. Getting to work with MIT Inventor App was fun to learn. I was happy to see how many
+                    tutorials
+                    and documentation was out there supporting this tool. It’s nice to see an active and expansive community supporting
+                    the app.
+                    I really appreciated how simple it was to make code and connect your phone, to immediately demo the app live as
+                    you’re continuing
+                    to form the logic. A challenge I faced was that I jumped into building too fast and learned about procedures once I
+                    was done.
+                    If I had taken more time to research beforehand, I believe my code base would have come out cleaner with increased
+                    readability.
+                    MIT Inventor App is great, and I can see the significance of this tool for building a prototype app but not
+                    enterprise level
+                    as it does lack some features.
+                </p>            </div>
+            <div id="classwork-3">
+                <h5>Class Work 3</h5>
+                <p><strong>Absar Syed</strong></p>
+                <p><strong>INFT 3101</strong></p>
+                <p><strong>Date:</strong> 2024-11-15</p>
+                
+                <h2>App Code</h2>
+                
+                <img src="/assets/Picture41.png" alt="app-code" class="img-fluid"> 
+                
+                <h2>App Test</h2>
+                <h3>Android Studio Emulator</h3>
+                
+                <img src="/assets/Picture42.png" alt="android-studio" class="img-fluid"> 
+                
+                <h3>BlueStacks Emulator</h3>
+                
+                <img src="/assets/Picture43.png" alt="bluestacks" class="img-fluid"> 
+                
+                <h2>Reflection</h2>
+                <p>
+                    This was an informative exercise and one I have been looking forward to. I’ve been looking forward to learning
+                    Flutter as mobile
+                    development for both iOS and Android with a single code base just makes sense. It was fun to research and learn
+                    about Flutter and
+                    Dart and get to know them. It’s fun and intuitive and I can’t wait for more. I do find the structure of Dart and
+                    Flutter to be
+                    difficult to understand. With time and practice, I will get it.
+                </p>            </div>
+        </div>
+    </div>
+</div>
+<script>
+    Handlebars.registerPartial('project');
+    Handlebars.registerPartial('lab1');
+    Handlebars.registerPartial('lab2');
+    Handlebars.registerPartial('lab3');
+    Handlebars.registerPartial('lab4');
+    Handlebars.registerPartial('classwork1');
+    Handlebars.registerPartial('classwork2');
+    Handlebars.registerPartial('classwork3');
+</script>
+    </main>
+
+    <footer class=" border-top">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-4">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                </a>
+                <span class="text-muted">© <span id="CurrentYear"></span> Absar Syed</span>
+            </div>
+    
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li><a class="text-muted text-decoration-none" href="../terms_conditions"> Terms and Conditions</a></li>
+            </ul>
+        </div>
+    
+    </footer>
+    
+    <script>
+      var CurrentYear = new Date().getFullYear();
+      document.getElementById("CurrentYear").textContent = CurrentYear;
+    </script>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</body>
+</html>

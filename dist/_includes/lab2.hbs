@@ -1,0 +1,65 @@
+<p>Absar Syed<br>INFT 3101<br>2024-09-26</p>
+
+
+<h3>XML Screenshots</h3>
+<img src="/assets/Picture15.png" alt="xml1" class="img-fluid">
+<img src="/assets/Picture16.png" alt="xml2" class="img-fluid">
+<img src="/assets/Picture17.png" alt="xml3" class="img-fluid">
+
+<h3>DTD Code</h3>
+<pre style="white-space: pre-wrap; font-size: 0.6rem;">
+&lt;!ELEMENT Events (OrgName, OrgLogo, Website?, Socials*, Event+)&gt;
+&lt;!ELEMENT OrgName (#PCDATA)&gt;
+&lt;!ELEMENT OrgLogo (#PCDATA)&gt;
+&lt;!ATTLIST OrgLogo type CDATA #FIXED "image" format (jpg|jpeg|png) #REQUIRED&gt;
+&lt;!ELEMENT Website (#PCDATA)&gt;
+&lt;!ELEMENT Socials (#PCDATA)&gt;
+
+&lt;!ELEMENT Event (EventName, Date, Host, Participants+, Resources, Feedback*, Finances)&gt; 
+&lt;!ATTLIST Event eventID CDATA #REQUIRED&gt;
+&lt;!ELEMENT EventName (#PCDATA)&gt;
+&lt;!ELEMENT Date EMPTY&gt;
+&lt;!ATTLIST Date start CDATA #REQUIRED end CDATA #REQUIRED&gt;
+
+&lt;!ELEMENT Host (HostName, HostContact)&gt;
+&lt;!ATTLIST Host hostID CDATA #REQUIRED&gt;
+&lt;!ELEMENT HostName EMPTY&gt;
+&lt;!ATTLIST HostName first CDATA #REQUIRED last CDATA #REQUIRED&gt;
+&lt;!ELEMENT HostContact EMPTY&gt;
+&lt;!ATTLIST HostContact phone CDATA #REQUIRED email CDATA #REQUIRED&gt;
+
+&lt;!ELEMENT Participants (ParticipantName, Role, ParticipantContact)&gt;    
+&lt;!ELEMENT ParticipantName EMPTY&gt;
+&lt;!ATTLIST ParticipantName first CDATA #REQUIRED last CDATA #REQUIRED&gt;
+&lt;!ELEMENT Role (#PCDATA)&gt;
+&lt;!ELEMENT ParticipantContact EMPTY&gt;
+&lt;!ATTLIST ParticipantContact phone CDATA #REQUIRED email CDATA #REQUIRED&gt;
+
+&lt;!ELEMENT Resources (Venue, Equipment+, Catering*)&gt;
+&lt;!ELEMENT Venue EMPTY&gt;
+&lt;!ATTLIST Venue location CDATA #REQUIRED capacity CDATA #REQUIRED&gt;
+&lt;!ELEMENT Equipment (#PCDATA)&gt;
+&lt;!ELEMENT Catering (#PCDATA)&gt;
+&lt;!ATTLIST Catering details CDATA #REQUIRED&gt;
+
+&lt;!ELEMENT Feedback (Comment)&gt;
+&lt;!ATTLIST Feedback feedbackID CDATA #REQUIRED&gt;
+&lt;!ELEMENT Comment (#PCDATA)&gt;
+
+&lt;!ELEMENT Finances (Budget, Revenue)&gt;
+&lt;!ELEMENT Budget (#PCDATA)&gt;
+&lt;!ELEMENT Revenue (#PCDATA)&gt;
+    </pre>
+
+<h3>XML Validation</h3>
+<img src="/assets/Picture18.png" alt="xml-validate-1" class="img-fluid">
+<img src="/assets/Picture19.png" alt="xml-validate-2" class="img-fluid">
+
+<h3>XML Tree Diagram</h3>
+<img src="/assets/Picture20.png" alt="xml-tree" class="img-fluid">
+
+<h3>References</h3>
+<ul>
+    <li><a href="https://www.w3schools.com/xml/">XML Tutorial - w3schools.com</a></li>
+    <li><a href="https://www.xmlvalidation.com/">Validate XML files - xmlvalidation.com</a></li>
+</ul>

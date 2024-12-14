@@ -1,0 +1,126 @@
+<p>
+    INFT 3101<br>
+    Mobile Development<br>
+    Project<br>
+    Topic: Flappy Bird Clone
+</p>
+<br>
+<p>
+    Group Members: <br>
+    Takirul Islam<br>
+    Ali Mujtaba - 100792180<br>
+    Absar Syed<br>
+    Group Number: 2<br>
+    Faculty of Science, Engineering, and Information Technology (SEIT), Durham College<br>
+    INFT-3101-03: Mobile Development
+</p>
+<br>
+<p>
+    <b>App Description</b><br>
+    This project is a clone of the popular Flappy Bird game. The app offers a fun and engaging experience where players navigate a bird through pipes while trying to avoid obstacles. It includes five distinct screens: a start screen where players input their name and have the option to customize or adjust settings, a settings screen to control volume and other game preferences, a customization screen where users can change the bird's color using in-game points, a game screen where the action takes place, and a leaderboard that connects to a database to track high scores.
+</p>
+<br>
+<p>
+    <b>App Deliverables</b><br>
+    The deliverables for this project include the complete set of app features, each accompanied by detailed descriptions and corresponding visual elements such as wireframes or screenshots. The app's first screen, where users can enter their name and choose between starting the game, accessing settings, or customizing the bird, will feature a simple and intuitive design. The settings screen will allow users to control in-game audio levels and, potentially, other preferences to personalize the gameplay experience. The customization screen will showcase a variety of bird colors, which can be unlocked or purchased using points earned during gameplay. This system will give players a sense of progression as they advance through the game. The game screen itself will be highly interactive, focusing on smooth, fluid gameplay mechanics where players control the bird by tapping the screen to navigate through obstacles. The final screen will present a leaderboard, connected to a database, where users can see their rank and compare scores with friends and other players globally. All screens will be designed with user experience in mind, ensuring that the app is easy to navigate, visually appealing, and offers smooth transitions between different features. Visuals will be provided through wireframes or mockups that illustrate how the app will look and function in real-time.
+</p>
+<br>
+<img src="/assets/Picture1.png" alt="mockup1" class="img-fluid">
+<img src="/assets/Picture2.png" alt="mockup2" class="img-fluid">
+<p>Mockups of the app from our planning and design stage, all made on Figma.com.</p>
+<br><br>
+<p>
+    <b>App Drawbacks</b><br>
+    Despite its simple and engaging gameplay, the Flappy Bird clone app does have a few notable limitations. One issue is the lack of complexity in the game’s mechanics. The game essentially requires the player to tap the screen to keep the bird in the air, which can quickly become repetitive and boring. Adding more dynamic elements, such as changing speeds or varying obstacles, could improve the player experience by offering more challenge. Another drawback is the limited customization available to the player. Currently, the only customization is the ability to change the bird’s color, which doesn’t offer much variety or personal expression. Expanding customization options to include different bird designs, accessories, or even gameplay styles could make the app more appealing. Additionally, the game relies on an internet connection for displaying the leaderboard, which may not always be ideal for players in low-connectivity areas. A local leaderboard would be a great fallback option for players who prefer to play offline. Lastly, the game’s static background might not be engaging enough for players in the long run. It could be more visually stimulating if the background included moving clouds or varying weather conditions, offering a more immersive experience.
+</p>
+<br>
+<p> 
+    <b>Screenshots & Testing</b><br>
+    <b>Sign-in</b><br>
+</p>
+<img src="/assets/Picture3.png" alt="signin screen" class="img-fluid">
+<p>
+    This is the initial sign-in page on the first start of the app. Using Firebase Anonymous Authentication, the user inputs a Username and is logged in once and forever, or until they clear their app storage. Currently, there is no way to sign back in once data is cleared.
+</p>
+<br>
+<p>
+    <b>Homepage</b><br>
+</p>
+<img src="/assets/Picture4.png" alt="home screen" class="img-fluid">
+<p>  
+    You are then met with the Homepage where you can see 2 buttons, one for the settings page and the other for the leaderboard. The background is a png that infinitely moves to the left giving a flying look. The bird is animated with a simple 2-frame animation from a spritesheet to appear as though it is flapping its wings. To initiate gameplay simply tap on the screen to start and you are off.
+</p>
+<br>
+<p>
+    <b>Settings</b><br>
+</p>
+<img src="/assets/Picture5.png" alt="settings screen" class="img-fluid">
+<p>
+    After tapping on the settings button, the settings screen opens, and the player is met with their username which is fetched from Firebase, a toggle switch for the background music, and a button to go back to the homepage.
+</p>
+<br>
+<p>
+    <b>Leaderboard</b><br>
+</p>
+<img src="/assets/Picture6.png" alt="leaderboard screen" class="img-fluid">
+<p>
+    From the homepage, after tapping on the leaderboard, the player is met with the leaderboard screen showing the top five players with the highest score. This page fetches its data from the Firebase Cloud Firestore Database. The data is updated every time you click on this page. After the table, you can see we display the player’s name, highest score, total coins they have accumulated, and another button to direct the player back to the homepage.
+</p>
+<br>
+<p>
+    <b>Gameplay</b><br>
+</p>
+<img src="/assets/Picture7.png" alt="gameplay screen" class="img-fluid">
+<p>
+    From the homepage, once the player taps on the screen, the app title and buttons disappear, and the pipes begin to move in from the right, giving a seamless transition from the homepage to gameplay. The pipes will randomly generate infinitely, and only 5 pipes are kept in the game at a time to avoid creating a memory leak. A gold coin remains in between each pipe pair which will serve as the points system with the counter being displayed at the top of the screen.
+</p>
+<br>
+<p>
+    <b>Game Over</b><br>
+</p>
+<img src="/assets/Picture8.png" alt="gameover screen" class="img-fluid">
+<p>
+    Our final screen of the app is the game over screen. It displays once the player makes contact with the pipes. It displays the score as “Coins earned:” and has a button that returns the player back to the homepage.
+</p>
+<br>
+<p>
+    <b>Firebase Authentication</b><br>
+</p>
+<img src="/assets/Picture9.png" alt="anon auth" class="img-fluid">
+<p>
+    This is the service used in order to anonymously authenticate a user to sign in to the game.
+</p>
+<br>
+<p>
+    <b>Firebase Cloud Firestore Database</b><br>
+</p>
+<img src="/assets/Picture10.png" alt="players table" class="img-fluid">
+<p>
+    This is the schema for the players table.
+</p>
+<br>
+<img src="/assets/Picture11.png" alt="scores table" class="img-fluid">
+<p>
+    This is the schema for the scores table.
+</p>
+<br>
+<img src="/assets/Picture12.png" alt="skins table" class="img-fluid">
+<p>
+    This is the schema for the skins table, which was unfortunately not utilized as skins and customizations were not able to be implemented due to time constraints.
+</p>
+<br>
+<p>
+    <b>Reflections</b><br>
+    <b>Absar - Functionality Developer</b><br>
+    Reflecting on this project, I can look back on this and say I have learned a lot and have enjoyed it thoroughly. I put together the frontend, game logic, all screens, and functionalities, aside from backend services. This learning to make a game was a lot of fun and something I have been wanting to do for a while. Even though I faced a lot of challenges, I had fun solving them. The biggest challenge by far was just having to learn everything. As Flutter was new to me, I was essentially going off nothing, consuming a lot of time with reading documentation and watching hours-long tutorials on 2x speed. I eventually found Flame, a 2D game engine for Flutter, which gave me more direction in building, but yet another thing to learn. It does not help how Dart structures its builds with continuous nesting of components. Eventually, you must encapsulate parts of a build into its own class for readability. To reiterate, the biggest challenge was how time-consuming learning Flutter and Flame was, nevertheless I enjoyed every bit of it.
+</p>
+<br>
+<p>
+    <b>Ali - Backend Developer</b><br>
+    Developing this app was both a challenging and deeply rewarding experience. From conceptualizing the app to implementing its core features, the journey was filled with learning opportunities and moments of creativity. Conceptualizing the gameplay and outlining the app's structure came naturally, as the game's logic and features felt intuitive to design. However, bringing these ideas to life required a steep learning curve. Integrating Firebase was my first experience working with a cloud-based backend, and learning its concepts—from authentication to Firestore configuration—was both daunting and fascinating. Setting up the database to store player scores, purchased skins, and in-game points required me to learn Firebase's structure and best practices. Like the frontend, I faced numerous hurdles when trying to make everything work seamlessly. Initially, I found Firebase's documentation overwhelming and difficult to navigate. Tasks like configuring authentication, setting up real-time updates for the leaderboard, and managing data security were frustrating at times, as I was essentially starting from scratch. However, as I experimented and explored, I began to see how powerful Firebase could be. With every small breakthrough—whether it was successfully saving data to Firestore or implementing user-specific configurations—I felt a sense of accomplishment that made the effort worthwhile. This project not only deepened my understanding of mobile app development but also introduced me to the intricacies of working with backend services. It strengthened my problem-solving skills and taught me to be resourceful when navigating complex frameworks and third-party tools. Overall, I’m proud of what I’ve accomplished and excited to apply these skills to future projects.
+</p>
+<br>
+<p>
+    <b>Takirul - UX/UI Designer</b><br>
+    As the UI/UX designer for our Flappy Bird game, my involvement was minimal, and the design ended up being a bit of a mess. From the very start, I didn’t understand the requirements well, and I assumed that creating a simple, minimal interface would be enough. I didn’t consider the app’s core functionality or its user experience thoroughly enough. I quickly sketched a basic wireframe without much thought or effort, and even though it was approved by the team, the mockups didn’t represent the feel of the game at all. The colors I chose were too bright, and I didn’t consider how they might affect gameplay. For instance, the background color clashed with the bird and obstacles, making it hard to distinguish the key elements of the game. The buttons were poorly placed, and the layout didn’t offer any clarity or intuitive navigation. Instead of focusing on making the user interface smooth and engaging, I just threw together a simple menu and game screen, hoping it would work without further refinement. I didn’t take time to plan out the flow of the game, and because of this, the game felt disjointed. The text on the screens was hard to read, and the icons were too small, which made it difficult for players to understand how to navigate the app. I didn’t do much testing or seek feedback from the team until the app was nearly finished, which meant I had no opportunity to make meaningful changes. When it came to the design of the interactive elements, I didn’t take advantage of animations or subtle transitions to enhance the user experience. The bird flapping, for example, didn’t look fluid, and the game didn’t have any sound effects or animations to make it feel immersive. I could have added a visual cue for the score or made the game controls more accessible, but I didn’t focus on those elements. The settings page was also a missed opportunity for user interaction—what could have been a space to allow players to adjust difficulty or sound settings turned out to be a bare-bones page with little functionality.
+</p>

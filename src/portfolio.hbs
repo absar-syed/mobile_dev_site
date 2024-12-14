@@ -1,0 +1,94 @@
+---
+layout: mylayout.hbs
+title: Portfolio
+---
+<style>
+    #portfolio-nav{
+        padding-top: 10px;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
+</style>
+
+<h1>{{title}}</h1>
+
+<div class="row p-0 m-0">
+    <div id="portfolio-nav" class="col-4 p-0 m-0">
+        <nav class="h-100 flex-column align-items-stretch pe-4 border-end ">
+            <nav class="nav nav-underline flex-column">
+                <a class="nav-link text-info-emphasis  fs-sm-3" href="#project">Project</a>
+                <a class="nav-link text-info-emphasis  fs-sm-3" href="#labs">Labs</a>
+                <nav class="nav nav-underline flex-column ">
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#lab-1">Lab 1</a>
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#lab-2">Lab 2</a>
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#lab-3">Lab 3</a>
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#lab-4">Lab 4</a>
+                </nav>
+                <a class="nav-link text-info-emphasis  fs-sm-3" href="#classwork">Class Work</a>
+                <nav class="nav nav-underline flex-column">
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#classwork-1">Class Work 1</a>
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#classwork-2">Class Work 2</a>
+                    <a class="nav-link ms-3 my-1 text-info-emphasis  fs-sm-3" href="#classwork-3">Class Work 3</a>
+                </nav>
+            </nav>
+        </nav>
+    </div>
+
+    <div class="col-8">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+            class="scrollspy-example-2" tabindex="0">
+            <div id="project">
+                <h4>Project</h4>
+                {{> project}}
+            </div>
+            <div id="labs">
+                <h4>Labs</h4>
+                <p>This is a collection of all my labs that are completed individually, enjoy!</p>
+            </div>
+            <div id="lab-1">
+                <h5>Lab 1</h5>
+                {{> lab1}}
+            </div>
+            <div id="lab-2">
+                <h5>Lab 2</h5>
+                {{> lab2}}
+            </div>
+            <div id="lab-3">
+                <h5>Lab 3</h5>
+                {{> lab3}}
+            </div>
+            <div id="lab-4">
+                <h5>Lab 4</h5>
+                {{> lab4}}
+            </div>
+            <div id="classwork">
+                <h4>Class Work</h4>
+                <p>This is a collection of all my class works that are completed individually, enjoy!</p>
+            </div>
+            <div id="classwork-1">
+                <h5>Class Work 1</h5>
+                {{> classwork1}}
+            </div>
+            <div id="classwork-2">
+                <h5>Class Work 2</h5>
+                {{> classwork2}}    
+            </div>
+            <div id="classwork-3">
+                <h5>Class Work 3</h5>
+                {{> classwork3}}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    Handlebars.registerPartial('project');
+    Handlebars.registerPartial('lab1');
+    Handlebars.registerPartial('lab2');
+    Handlebars.registerPartial('lab3');
+    Handlebars.registerPartial('lab4');
+    Handlebars.registerPartial('classwork1');
+    Handlebars.registerPartial('classwork2');
+    Handlebars.registerPartial('classwork3');
+</script>

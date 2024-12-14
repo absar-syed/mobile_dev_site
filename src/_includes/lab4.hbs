@@ -1,0 +1,131 @@
+<p><strong>Absar Syed</strong></p>
+<p><strong>INFT 3101</strong></p>
+<p><strong>Date:</strong> 2024-11-01</p>
+
+<h2>Topic Overview: Generics</h2>
+
+<h3>Definition</h3>
+<p>
+    Generics in Dart and in general is a type-safe way to write flexible, reusable code that can work with different
+    data types.
+    In other words, generics are not specific to any particular data type. With generics, you can define classes,
+    methods,
+    and functions without a strictly defined data type but instead can pass in any data type using type parameters.
+    These type parameters, which look like <code>&lt;T&gt;</code>, are used as placeholders for when a data type is
+    passed through.
+</p>
+
+<h3>How & Why</h3>
+<p>
+    Generics are used for clean, type-safe, reusable code. There are cases in which the exact same class, method or
+    function
+    are recreated because it requires a different data type. With generics, you do not need to duplicate your code
+    for different
+    data types but can simply write one class, method or function and have different data types be passed through
+    it, while still
+    maintaining type safety.
+</p>
+
+<h3>Comparisons</h3>
+<p>
+    One comparison with similar or related programming concepts in Dart to generics would be dynamic typing. Dynamic
+    typing is when
+    you declare the data type of a variable as ‘dynamic’ allowing it to change types at runtime. You can also use
+    type inference by
+    declaring <code>var</code> and it will default to a dynamic data type. Dynamic typing has flexibility with its
+    code with no runtime
+    errors just like generics but lacks type safety.
+</p>
+
+<h3>Advantages & Limitations</h3>
+<p>
+    Some advantages of generics in Dart are that it is type-safe, promotes code reusability, and can improve
+    performance. When using
+    generics, it ensures that you catch type-related errors at compile time instead of runtime, reducing the chance
+    of bugs.
+    Generics promote reusability by working with any data type, making them flexible as well. They improve
+    performance by eliminating
+    the need for type checks at runtime.
+</p>
+<p>
+    Some limitations of generics in Dart include the complexity of the code and some constraints during runtime.
+    Generics can make
+    your code more complex and difficult to read, especially for those who are not familiar with the concept. Dart’s
+    runtime type
+    checking does not always work well with generics due to Dart’s type erasure.
+</p>
+
+<h3>Example Implementation</h3>
+
+<h4>Example 1</h4>
+<p><strong>Code & Output</strong></p>
+<img src="/assets/Picture23.png" alt="code output" class="img-fluid">
+
+<h4>Issues or Considerations</h4>
+<p>
+    I didn’t have much issue with generating this example. I had thoroughly researched the concept and felt I had a
+    strong
+    understanding of what generics are. I did however find it difficult to come up with an idea to implement the
+    concept.
+    I looked towards YouTube for inspiration and saw what others have made. I found a few videos explaining and
+    demoing generics
+    in a simple way. In their examples, it was common for them to use different data type arrays, which sparked my
+    own idea for
+    implementation. I am pleased with this example as I have implemented a new concept that I have learned in a
+    straightforward manner.
+</p>
+
+<h4>Example 2</h4>
+<p><strong>Code & Output</strong></p>
+<img src="/assets/Picture24.png" alt="code output 2" class="img-fluid">
+<img src="/assets/Picture25.png" alt="code output 3" class="img-fluid">
+
+
+<h4>Issues or Considerations</h4>
+<p>
+    This example showcases how generics are used when only numeric data types are needed for arithmetic and how we
+    can use
+    generics to constrain certain data types. It might sound counterintuitive because generics are supposed to allow
+    for the
+    pass-through of all data types. In the case of needing all numeric data types for a math operation, this can be
+    used as
+    a possible solution. With this approach, you do not have to explicitly state <code>int</code> and
+    <code>double</code> and can
+    reduce the amount of code. I also showcase the same concept being done with the <code>String</code> data type
+    for only accepting
+    alphabet characters. I personally do not see the value in this implementation, as Dart considers
+    <code>char</code> as a
+    <code>String</code> as well. So, <code>&lt;T extends String&gt;</code> is not different from
+    <code>&lt;String&gt;</code>
+    therefore, it becomes unnecessary.
+</p>
+
+<h3>Real-World Scenario</h3>
+<p>
+    A real-world scenario that implements generics with Flutter in mind would be generic widgets. Since widgets are
+    the building
+    block of mobile app development, it can become repetitive to have to build so many widgets. With generic
+    widgets, you can
+    increase code reusability, reduce code duplication all while being type-safe and flexible.
+</p>
+<p>
+    Imagine a fitness tracking app that aims to have a dashboard that displays multiple different metrics of your
+    activities.
+    Using generic widgets, you can create a widget that displays any metric of any data type. This allows for a more
+    uniform
+    look that shows consistency in design, which can enhance the user’s experience. Also, the code reusability
+    allows for reduced
+    code duplication and increases maintainability as any changes to the widget are done in one place.
+</p>
+
+<h3>References</h3>
+<ul>
+    <li><a href="https://www.youtube.com/watch?v=aNTDJ9bnRU4&t=18s">Bro Code. (2021, July 3). C# generics ⁉️.
+            YouTube.</a></li>
+    <li><a href="https://www.darttutorial.org/dart-tutorial/dart-generics/">Dart generics. Dart Tutorial. (2022,
+            June 11)</a></li>
+    <li><a href="https://dart.dev/language/type-system">The Dart Type System. Dart. (2024, February 21)</a></li>
+    <li><a href="https://dart.dev/language/generics">Generics. Dart. (n.d.)</a></li>
+    <li><a href="https://www.youtube.com/watch?v=8MywaeBqFmI">NetNinja. (2024, January 19). Dart Crash Course #10 -
+            Generics. YouTube.</a></li>
+</ul>
